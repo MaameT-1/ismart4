@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute of Sexuality, Marriage, and Family Life Research and Training</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(to bottom right, #0119ad, #000839);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+
+         h3 {
+            color: #FFD300;
+            font-size: 1.5rem;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #0119ad;
+            border: none;
+            color: #fff;
+            padding: 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .submit-btn:hover {
+            background-color: #e6b800;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            max-width: 750px;
+            margin-bottom: 20px;
+            border: 5px solid white;
+            border-radius: 15px;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+            form {
+                padding: 15px;
+            }
+            .submit-btn {
+                font-size: 0.875rem;
+                padding: 10px;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            h1, h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://scontent.facc6-1.fna.fbcdn.net/v/t39.30808-6/464014333_2231162900581827_5547230746199190182_n.jpg" alt="Header Image" class="header-image">
+    <h1>INSTITUTE OF SEXUALITY, MARRIAGE, AND FAMILY LIFE RESEARCH AND TRAINING (iSMART) PROGRAM - JANUARY 2025 EDITION</h1>
+    <h3>Kindly fill this form to register for the January 2025 edition of SEX THERAPY SPECIALIZATION TRAINING PROGRAM.</h3>
+    <h2>For any support or assistance kindly WhatsApp 0271467767 (Please do not call this number).</h2>
+
+    <form name="registrationForm" id="registrationForm">
+        <label for="title">Title:</label>
+        <select id="title" name="Title" required>
+            <option value="">Please select</option>
+            <option value="Miss">Miss</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Dr">Dr</option>
+            <option value="Rev">Rev</option>
+            <option value="Prof">Prof</option>
+            <option value="Dcn">Dcn</option>
+            <option value="Dcns">Dcns</option>
+        </select>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="whatsapp">WhatsApp Number:</label>
+        <input type="text" id="whatsapp" name="WhatsappNumber" required>
+
+        <label for="age-range">Age Range:</label>
+        <select id="age-range" name="AgeRange" required>
+            <option value="">Please select</option>
+            <option value="Below 18">Below 18</option>
+            <option value="18 - 25">18 - 25</option>
+            <option value="26 - 35">26 - 35</option>
+            <option value="36 - 45">36 - 45</option>
+            <option value="46 - 55">46 - 55</option>
+            <option value="56 and Above">56 and Above</option>
+        </select>
+
+        <label for="education-level">Level of Education:</label>
+        <select id="education-level" name="EducationLevel" required>
+            <option value="">Please select</option>
+            <option value="Primary">Primary</option>
+            <option value="JHS">JHS</option>
+            <option value="SHS">SHS</option>
+            <option value="Tertiary">Tertiary</option>
+        </select>
+
+        <label for="marital-status">Marital Status:</label>
+        <select id="marital-status" name="MaritalStatus" required>
+            <option value="">Please select</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Separated">Separated</option>
+        </select>
+
+        <label for="profession">Profession / Occupation:</label>
+        <input type="text" id="profession" name="profession" required>
+
+        <label for="licensed">Are you a Licensed Professional?:</label>
+        <select id="licensed" name="licensedProfessional" required>
+            <option value="">Please select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="specification">If YES, please specify (e.g., licensed teacher, counselor):</label>
+        <input type="text" id="specification" name="professionalSpecification">
+
+        <label for="location">Current Location (e.g., Tamale, Northern Region, Ghana):</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="expectations">What are your expectations for this training program?</label>
+        <textarea id="expectations" name="expectations" rows="4"></textarea>
+
+        <label for="source">How did you know about this training?</label>
+        <select id="source" name="source" required>
+            <option value="">Please select</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Friend or Relative">Friend or Relative</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="certificates">Would you like to receive certificates at the end of the training?</label>
+        <select id="certificates" name="certificates" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <div id="formMessage"></div>
+    </form>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNpfsOtF2ewfA_0L9_9rl5TLkDQbugAXYv1jJoij8Oyypnx-kxMsV34Su25vb6aa3Aew/exec'; // Replace with your Google Apps Script URL
+        const form = document.forms['registrationForm'];
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.display = 'block';
+            formMessage.textContent = 'Submitting... Please wait.';
+            formMessage.style.color = 'blue';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (response.ok) {
+                        formMessage.textContent = 'Registration successful! Redirecting...';
+                        formMessage.style.color = 'green';
+
+                        setTimeout(function () {
+                            window.location.href = 'https://chat.whatsapp.com/FitTMumxIOKCNtLDOYXlPl'; // Replace with your WhatsApp group link
+                        }, 2000);
+                    } else {
+                        throw new Error('Failed to submit the form.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    formMessage.textContent = 'Error submitting the form. Please try again.';
+                    formMessage.style.color = 'red';
+                });
+        });
+    </script>
+</body>
+</html>
