@@ -190,6 +190,14 @@
 
         <label for="certificates">Would you like to receive certificates at the end of the training?</label>
         <select id="certificates" name="certificates" required>
+             <option value="">Please select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="certificates">Would you like to participate in the one day practical session which will be held in Accra at a cost?</label>
+        <select id="certificates" name="Practicalsession" required>
+             <option value="">Please select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
@@ -197,12 +205,18 @@
     <h4>NB: YOU WILL BE REDIRECTED TO JOIN THE OFFICIAL WHATSAPP GROUP PAGE FOR THE TRAINING AFTER SUBMITTING</h4>
 
         <button type="submit" class="submit-btn">Submit</button>
-        <div id="formMessage"></div>
     </form>
+<div id="formMessage" style="display: none;"></div>
+
+<p id="backupLink" style="display: none;">
+  If you are not redirected, click <a href="https://chat.whatsapp.com/FitTMumxIOKCNtLDOYXlPl" target="_blank">here</a> to join the WhatsApp group.
+</p>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzNpfsOtF2ewfA_0L9_9rl5TLkDQbugAXYv1jJoij8Oyypnx-kxMsV34Su25vb6aa3Aew/exec'; // Replace with your Google Apps Script URL
         const form = document.forms['registrationForm'];
+        const formMessage = document.getElementById('formMessage');
+        const backupLink = document.getElementById('backupLink');
 
         form.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -219,16 +233,18 @@
                         formMessage.style.color = 'green';
 
                         setTimeout(function () {
-                            window.location.href = 'https://chat.whatsapp.com/FitTMumxIOKCNtLDOYXlPl'; // Replace with your WhatsApp group link
-                        }, 2000);
+                            window.location.href = 'https://chat.whatsapp.com/FitTMumxIOKCNtLDOYXlPl'; //
+                        }, 3000);
                     } else {
-                        throw new Error('Failed to submit the form.');
+                        throw new Error('Form submission succeeded, but redirect failed.');
                     }
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
-                    formMessage.textContent = 'Error submitting the form. Please try again.';
-                    formMessage.style.color = 'red';
+                    formMessage.textContent = 'Form submission successful, but unable to redirect. Please click the WhatsApp link manually.';
+                    formMessage.style.color = 'orange';
+
+                    backupLink.style.display = 'block';
                 });
         });
     </script>
